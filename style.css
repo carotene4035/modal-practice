@@ -1,12 +1,13 @@
 #modal {
   display: none;
-  position: absolute;
   position: absolute; /** bodyにたいして相対的になる */
   top: 0;
+  bottom: 0;
   left: 0;
-
-  width: 80px;
-  height: 80px;
+  right: 0;
+  margin: auto;
+  width: 40%;
+  height: 60%;
   background: #fff;
   z-index: 10;
 }
