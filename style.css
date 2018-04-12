@@ -1,5 +1,14 @@
 #modal {
   display: none;
+  position: absolute;
+  position: absolute; /** bodyにたいして相対的になる */
+  top: 0;
+  left: 0;
+
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  z-index: 10;
 }
 
 #modal-overlay {
