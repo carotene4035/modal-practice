@@ -4,7 +4,10 @@
 
 #modal-overlay {
   display: none;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
+  position: absolute; /** bodyにたいして相対的になる */
+  top: 0;
+  left: 0;
   background: rgba(0,0,0,0.4);
 }
