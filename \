@@ -1,0 +1,19 @@
+// modalの要件
+// 何かしらをクリックしたら、
+// どこをclickするの？？？
+// 画面全体が黒に覆われ、
+// その上にまた何かがあらわれる
+
+function Modal(el) {
+  this.$el = el;
+  console.log(this.$el);
+  this.handleEvents();
+}
+
+Modal.prototype.handleEvents = function() {
+  this.$el.on('click', function(e) {
+    console.log(e);
+  });
+}
+
+const modal = new Modal($("#modal-trigger"));
