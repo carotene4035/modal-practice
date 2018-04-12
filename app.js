@@ -13,14 +13,19 @@ Modal.prototype.handleEvents = function() {
   const self = this;
 
   this.$el.on('click', function(e) {
+
     /** overlayの表示 */
     self.$overlay.fadeIn();
 
     /** modal本体の表示 */
-    console.log(self.$modal_body);
     self.$modal_body.fadeIn();
-
     // console.log(this); // イベントが発生したjavascriptのdom要素
+  });
+
+  /** overlayがclickされたら画面を閉じる */
+  this.$overlay.on('click', function() {
+    self.$overlay.fadeOut();
+    self.$modal_body.fadeOut();
   });
 }
 
