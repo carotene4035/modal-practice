@@ -10,8 +10,21 @@ function Modal(el) {
   this.$close_trigger = $('#close_trigger');
   /** イベントハンドラの設定 */
   this.handleEvents();
+  /*
+   * 上記の書き方は汎用性が低い(具体的なもの[id属性]に依存しすぎている)
+   *  なぜなら、#modalなどはid指定なので、１つのページに１つしかおけない
+   *  modalを複数作りたい場合にこの書き方だと対応できない
+   *
+   * → data属性を使った表記をし、
+   *   clickイベントが発生した時にmodal要素を取得しに行けば良い
+   *   そしたら複数のmodalにも対応できる
+   */
 }
 
+/*
+ * はじめからイベントを割り当ててしまっている
+ * ずっとそのまま
+ */
 Modal.prototype.handleEvents = function() {
   const self = this;
 
