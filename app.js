@@ -71,5 +71,5 @@ $(document).on('click', '[data-toggle]', function() {
   /** overlayを動的に生成して、表示する */
 
 
-  /** どうやったらfadeInするのか、未だわかんないやw */
+  /** どうやったらfadeInするのか、未だわかんないや */
 });

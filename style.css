@@ -8,7 +8,7 @@
   margin: auto;
   width: 40%;
   height: 60%;
-  background: #fff;
+  background: #ccc;
   z-index: 10;
 }
 
@@ -29,7 +29,15 @@
   margin: 10px;
 }
 
-.show {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
+.fade {
+  opacity: 0;
 }
+
+.show {
+  opacity: 1;
+}
+
+.fade {
+  transition: opacity 0.15s linear;
+}
+
