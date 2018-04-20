@@ -16,7 +16,7 @@ function Modal(el) {
    *  modalを複数作りたい場合にこの書き方だと対応できない
    *
    * → data属性を使った表記をし、
-   *   clickイベントが発生した時にmodal要素を取得しに行けば良い
+   *   clickイベントが発生した時にmodal要素を取得しに行けば良い.
    *   そしたら複数のmodalにも対応できる
    */
 }
@@ -56,4 +56,8 @@ Modal.prototype.hide = function() {
   this.$modal_body.fadeOut();
 }
 
-const modal = new Modal($("#modal_trigger"));
+
+/** clickされたときのイベントを登録 */
+$(document).on('click', '[data-toggle]', function() {
+  console.log(this);
+});
