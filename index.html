@@ -9,17 +9,19 @@
 
   <!-- modalのtrigger -->
   <div id="container">
-    <button data-toggle="modal">おしてね</button>
+    <button data-toggle="modal" data-target='#targetModal'>おしてね</button>
   </div>
 
   <!-- modal本体 -->
-  <div id="modal">
+  <div id="targetModal" class='modal'>
     <button id='close_trigger'>閉じる</button>
   </div>
 
-  <!-- modalの後ろにある、あの黒い奴 -->
+  <!-- 後から生成 -->
   <div id="modal_overlay">
   </div>
+
+  <!-- modalの後ろにある、あの黒い奴 -->
 
   <script src="./jquery.js"></script>
   <script src="./app.js"></script>

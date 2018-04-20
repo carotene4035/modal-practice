@@ -59,5 +59,17 @@ Modal.prototype.hide = function() {
 
 /** clickされたときのイベントを登録 */
 $(document).on('click', '[data-toggle]', function() {
-  console.log(this);
+
+  /** modalのターゲットを取得 */
+  const targetModalId = $(this).data('target');
+  const $targetModal = $(targetModalId);
+
+  /** modalを表示 */
+  $targetModal.css('display', 'block');
+  $targetModal.addClass('show');
+
+  /** overlayを動的に生成して、表示する */
+
+
+  /** どうやったらfadeInするのか、未だわかんないやw */
 });
