@@ -17,12 +17,18 @@
     <button id='close_trigger'>閉じる</button>
   </div>
 
-  <!-- 後から生成 -->
-  <div id="modal_overlay">
+
+  <!-- modalのtrigger -->
+  <div id="container">
+    <button data-toggle="modal" data-target='#targetModal1'>おしてね.別のモーダルが開くよ</button>
+  </div>
+
+  <!-- modal本体 -->
+  <div id="targetModal1" class='modal fade'>
+    <button id='close_trigger'>閉じるよ。別のモーダルだよ</button>
   </div>
 
   <!-- modalの後ろにある、あの黒い奴 -->
-
   <script src="./jquery.js"></script>
   <script src="./app.js"></script>
 </body>
