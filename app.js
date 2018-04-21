@@ -8,7 +8,6 @@
   var Selector = {
     BACKDROP: 'modal-backdrop',
     DATA_TOGGLE: '[data-toggle="modal"]'
-    MODAL_TARGET: 'target'
   };
 
   var ClassName = {
