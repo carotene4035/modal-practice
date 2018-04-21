@@ -70,6 +70,4 @@ $(document).on('click', '[data-toggle]', function() {
 
   /** overlayを動的に生成して、表示する */
 
-
-  /** どうやったらfadeInするのか、未だわかんないや */
 });

@@ -29,12 +29,26 @@
   margin: 10px;
 }
 
+/*
 .fade {
   opacity: 0;
   transition: opacity 0.3s ease-out;
 }
+*/
 
+/** showというanimationを0.15秒で移動させる */
 .show {
-  opacity: 1;
+  animation: show 0.15s linear 0s;
 }
+
+@keyframes show{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
 
